@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
+    -webkit-appearance: button;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: none;
+  }
+}
+
+@layer components {
+  .ant-select-selector {
+    @apply px-1 !important;
+  }
+
+  .ant-select-selection-item {
+    @apply pe-0 !important;
+  }
+}
+
+.clickRowStyle{
+  background-color: #fafafa
+}
+
+.selectdSetPosition {
+  cursor: move;
+}
