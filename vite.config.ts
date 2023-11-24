@@ -6,7 +6,6 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import path from 'path'
 
 export default defineConfig({
-  base: '/record-money/',
   plugins: [react(), viteCompression()],
   resolve: {
     alias: {

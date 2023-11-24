@@ -1,14 +1,14 @@
-import { cn } from '@/lib/utils'
+import { useRoutes } from 'react-router-dom'
+
+import routesConfig from '@/router/index'
+import NavBar from '@/pages/nav-bar'
 
 export default function App() {
-  const red = true
+  const routes = useRoutes(routesConfig)
   return (
-    <h1
-      className={cn('text-3xl font-bold  underline', 'text-violet-500', {
-        'bg-red-700': red,
-      })}
-    >
-      Hello world!
-    </h1>
+    <div>
+      {routes}
+      <NavBar />
+    </div>
   )
 }
